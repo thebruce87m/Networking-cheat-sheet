@@ -42,3 +42,15 @@ Play on the local machine. Use `rtspt` (not `rtsp`) to force the packets to come
 ```bash
 gst-play-1.0 rtspt://camera-user:camera-password@localhost:8888/Streaming/Channels/102
 ```
+
+
+# Find machines on a network (can be different subnet)
+
+```bash
+nmap -n -sn 192.168.250.0/24
+```
+or same subnet:
+
+```bash
+sudo arp-scan --localnet
+```
