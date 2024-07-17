@@ -7,6 +7,11 @@
 echo "2" > /dev/udp/127.0.0.1/1234
 ```
 
+## Set a static IP address for an interface:
+
+```
+sudo ifconfig eth1 192.168.2.100 up
+```
 
 ## Add another static IP to your machine on a different subnet
 Add a virtual interface for a different subnet with a static IP at the new interface
